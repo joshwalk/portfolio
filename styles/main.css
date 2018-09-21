@@ -1,0 +1,38 @@
+body {
+    font-family: Helvetica, Arial;
+    margin: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #33ccff;
+}
+
+section.blog_posts article {
+    border-bottom: 1px solid #333;
+}
+
+footer {
+    border-top: 1px solid #333;
+}
