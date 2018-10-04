@@ -1,37 +1,110 @@
 body {
-    font-family: Helvetica, Arial;
-    margin: 25px;
+    font-family: "Helvetica Neue", Arial;
+    -webkit-font-smoothing: antialiased;
 }
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    width:800px;
+    margin:35px auto;
+}
+
+
+header {
+    flex: 1 0 0;
+}
+
+nav {
+    flex: 2 0 0;
+}
+
+h1.logo {
+    float: left;
+    margin:0 0 0 5px;
+    font-family: 'Satisfy', cursive;
+    color: #4484ce;
+    font-size: 50px;
+}
+
+/***** Navitagion styling *****/
 
 nav ul {
+    margin:0 0 0 0;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    border-bottom: 1px solid #333;
-    border-top: 1px solid #333;
+    float: right;
+    padding-top: 30px;
 }
 
-nav ul li {
-    float: left;
-}
+    nav ul li {
+        float: left;
+        margin-left: 30px;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight:400;
+        font-size: 18px;
+        color: #4a4a4a;
+    }
 
-nav ul li a {
-    display: block;
-    color: black;
+        nav ul li a {
+            color: #4a4a4a;
+            display: block;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 1px solid #4a4a4a;
+            padding-bottom: 2px;
+        }
+
+        nav ul li a.current {
+            border-bottom: 1px solid #4a4a4a;
+            padding-bottom: 2px;
+        }
+
+        nav ul li a i {
+            border-bottom: none;
+        }
+
+p.intro {
+    font-size: 50px;
+    color: #d9d9d9;
     text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: white;
-    color: #33ccff;
-}
+    p.intro span {
+        color: #4a4a4a;
+    }
+
+    p.intro a {
+        text-decoration: none;
+        color: #d9d9d9;
+        border-bottom: 8px solid #4484ce;
+    }
+
+        p.intro a.newt:hover {
+            color: #95BCEB;
+        }
+        p.intro a.umsi:hover {
+            color: #f9cf00;
+        }
+
+/***** Blog styling *****/
 
 section.blog_posts article {
     border-bottom: 1px solid #333;
+    padding-botom: -5px;
 }
+
+
 
 footer {
     border-top: 1px solid #333;
