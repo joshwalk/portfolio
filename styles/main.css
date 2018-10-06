@@ -1,62 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Helvetica Neue", Arial;
     -webkit-font-smoothing: antialiased;
-}
-
-.wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
     font-weight: bold;
-    text-align: center;
-    width:800px;
-    margin:35px auto;
+    max-width:800px;
+    margin: auto;
+    background: white;
+    padding: 0 25px;
 }
 
+/***** Header styling *****/
 
-header {
-    flex: 1 0 0;
+.header-container {
+    flex-flow: row wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+    width: 100%;
 }
 
-nav {
-    flex: 2 0 0;
+.logo-container {
+    margin-left: 15px;
 }
 
 h1.logo {
-    float: left;
-    margin:0 0 0 5px;
     font-family: 'Satisfy', cursive;
     color: #4484ce;
     font-size: 50px;
+    display: block;
 }
 
-/***** Navitagion styling *****/
+/***** Navigation styling *****/
 
-nav ul {
-    margin:0 0 0 0;
-    list-style-type: none;
-    overflow: hidden;
-    float: right;
-    padding-top: 30px;
+nav {
+    align-self: center;
+    margin: 0 0.4em 0 0.8em;
 }
 
     nav ul li {
-        float: left;
-        margin-left: 30px;
+        display: inline;
         font-family: 'Helvetica Neue', sans-serif;
         font-weight:400;
         font-size: 18px;
+        padding: 0 0 0 1.4em;
         color: #4a4a4a;
     }
 
         nav ul li a {
             color: #4a4a4a;
-            display: block;
-            text-align: left;
             text-decoration: none;
         }
 
@@ -73,6 +70,8 @@ nav ul {
         nav ul li a i {
             border-bottom: none;
         }
+
+/***** Content styling *****/
 
 p.intro {
     font-size: 50px;
@@ -96,6 +95,31 @@ p.intro {
         p.intro a.umsi:hover {
             color: #f9cf00;
         }
+
+/***** Profile Links *****/
+
+ul.profiles {
+    margin-top: 75px;
+    list-style-type: none;
+}
+
+    ul.profiles li {
+        float:left;
+        padding-right: 20px;
+    }
+
+    ul.profiles li a {
+        text-decoration: none;
+        color: #d9d9d9;
+    }
+
+    ul.profiles li a:hover {
+        color: #4a4a4a;
+    }
+
+    ul.profiles li a i {
+        padding-right: 5px;
+    }
 
 /***** Blog styling *****/
 
